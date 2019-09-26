@@ -1,0 +1,17 @@
+.dialogsPage {
+  grid-area: p;
+  background-color:green;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas: 
+  "d m";
+}
+.dialogs {
+  grid-area: d;
+}
+.dialogsItem {
+  padding: 5px 10px;
+}
+.messeges {
+  grid-area: m;
+}
