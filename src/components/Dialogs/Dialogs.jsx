@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Dialogs.module.css';
 import DialogItem from './DialogItems/DialogItem';
-import MessegeItem from './Messeges/MessegeItem';
+import MessageItem from './Messages/MessageItem';
 
 
 const Dialogs = (props) => {
@@ -9,7 +9,7 @@ const Dialogs = (props) => {
   return (
     <div className={s.dialogsPage}>
       <DialogItem state={props.state}/>
-      <MessegeItem />
+      <MessageItem state={props.state}/>
     </div>);
 }
 

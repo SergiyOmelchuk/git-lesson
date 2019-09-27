@@ -1,6 +1,6 @@
 .dialogsPage {
   grid-area: p;
-  background-color:green;
+  background-color:darkgray;
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-areas: 
@@ -14,4 +14,12 @@
 }
 .messeges {
   grid-area: m;
+}
+.messageItemLeft {
+  text-align: left;
+
+}
+.messageItemRight {
+  text-align: right;
+  padding: 10px 20px;
 }

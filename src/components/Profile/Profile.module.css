@@ -39,11 +39,14 @@
   background-color: gainsboro;
   padding: 10px;
 }
-.profilePosts img {
+.profilePostsImg {
   height: 50px;
 }
 .PostsPost {
   padding: 10px;
+}
+.likeIcon {
+  height: 15px;
 }
 .profilePortfolio {
   grid-area: portfolio;
