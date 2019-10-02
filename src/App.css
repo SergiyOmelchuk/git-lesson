@@ -1,14 +1,13 @@
 .app-wrapper {
-  display: grid;
-  grid-template-rows: 60px 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:   
-  "h n"
-  "p p";
-  
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "h n" "p p";
+
 }
 
 .app-wrapper-content {
-  grid-area: p;
-  background-color:green;
+    grid-area: p;
+    background-color: green;
 }
+

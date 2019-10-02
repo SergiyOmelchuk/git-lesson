@@ -4,13 +4,14 @@ import DialogItem from './DialogItems/DialogItem';
 import MessageItem from './Messages/MessageItem';
 
 
+
 const Dialogs = (props) => {
 
-  return (
-    <div className={s.dialogsPage}>
-      <DialogItem state={props.state}/>
-      <MessageItem state={props.state}/>
-    </div>);
+    return (
+        <div className={s.dialogsPage}>
+            <DialogItem store={props.store} dispatch={props.dispatch}/>
+            <MessageItem store={props.store} dispatch={props.dispatch}/>
+        </div>);
 }
 
 export default Dialogs;

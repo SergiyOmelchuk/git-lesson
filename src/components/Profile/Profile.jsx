@@ -1,16 +1,16 @@
 import React from 'react';
 import s from "./Profile.module.css";
-import MyPosts from './MyPosts/MyPosts';
+import Posts from './Posts/Posts';
 import ProfileBackground from './ProfileBackground/ProfileBackground';
 import ProfileInfo from './ProfileInfo/ProfileInfo';
 import ProfilePorftfolio from './ProfilePorftfolio/ProfilePorftfolio';
 
-const Profile = () => {
+const Profile = (props) => {
   return (<div className={s.profile}>
 
     <ProfileBackground />
     <ProfileInfo />
-    <MyPosts />
+    <Posts store={props.store} dispatch={props.dispatch}/>
     <ProfilePorftfolio />
   </div>);
 }

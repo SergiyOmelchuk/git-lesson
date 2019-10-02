@@ -1,79 +1,100 @@
 .profile {
-  grid-area: p;
-  background-color:green;
-  display: grid;
-  grid-template-rows: 200px 1fr;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-areas:   
-  "b b b"
-  "profile posts portfolio";
+    grid-area: p;
+    background-color: green;
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "b b b" "profile posts portfolio";
 }
 
 .profileBackground {
-  height: 100px;
-  grid-area: b;
+    height: 100px;
+    grid-area: b;
 }
+
 .profileBackgroundImg {
-  width: 100%;
+    width: 100%;
 }
+
 .profileInfo {
-  grid-area: profile;
-  background-color: white;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    grid-area: profile;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .profileLogo {
-  text-align: center;
-  position: relative;
-  top: -75px;
+    text-align: center;
+    position: relative;
+    top: -75px;
 }
+
 .profileLogoImg {
-  height: 150px;
-  border-radius: 50%;
-  border: 5px solid white;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
 }
+
 .profilePosts {
-  grid-area: posts;
-  background-color: gainsboro;
-  padding: 10px;
+    grid-area: posts;
+    background-color: gainsboro;
+    padding: 10px;
 }
+
 .profilePostsImg {
-  height: 50px;
+    height: 50px;
 }
+
 .PostsPost {
-  padding: 10px;
+    padding: 10px;
 }
+
 .likeIcon {
-  height: 15px;
 }
+
+.likeIcon {
+    height: 15px;
+}
+
 .profilePortfolio {
-  grid-area: portfolio;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: yellowgreen;
-  padding: 10px;
+    grid-area: portfolio;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
 }
+
 .portfolioTittle {
-  padding: 10px;
+    padding: 10px;
 }
+
 .portfolioItems {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
- 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
 }
+
 .profilePortfolio img {
-  height: 100px;
-  width: 100px;
-  margin-top: 10px;
-  box-sizing: border-box;
-  border-radius: 3px;
-  background-color: grey;
-  
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: grey;
+
 }
+
 .profilePortfolio img:hover {
-  border: 1px solid black;
+    border: 1px solid black;
+}
+
+.addPost {
+    text-align: center;
+}
+
+.addPostTextarea {
+    width: 100%;
+    background-color: goldenrod;
 }
