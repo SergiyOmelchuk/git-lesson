@@ -6,11 +6,12 @@ import AddPost from "./AddPost/AddPost";
 const Posts = (props) => {
 
     return (<div className={s.profilePosts}>
-        <div>Я слежу за тобой: <br/>
 
-            {props.store._state.profilePage.newPostText}
+        {/*<div>Я слежу за тобой: <br/>*/}
 
-        </div><br/>
+        {/*    {props.store.state.profilePage.newPostText}*/}
+
+        {/*</div><br/>*/}
         <AddPost store={props.store} dispatch={props.dispatch}/>
         <MyPosts store={props.store}/>
     </div>);

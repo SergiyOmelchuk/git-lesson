@@ -1,6 +1,6 @@
 import React from 'react';
 import s from "./../../Profile.module.css";
-import {addPostActiveCreation, updateNewPostActiveCreation} from "../../../redux/State";
+import {addPostActiveCreation, updateNewPostActiveCreation} from "../../../redux/Profile-reducer";
 
 
 const AddPost = (props) => {

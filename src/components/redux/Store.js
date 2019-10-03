@@ -1,3 +1,6 @@
+import profileReducer from "./Profile-reducer";
+import dialogsReducer from "./Dialogs-reducer";
+
 let store = {
     _state: {
         dialogsPage: {
@@ -63,77 +66,13 @@ let store = {
         this._callSubscriber = observer;
     },
     dispatch(action) {
-        if (action.type === "ADD-POST") {
-            let newPost = {
-                id: 5,
-                likesCount: 0,
-                message: this._state.profilePage.newPostText
-            };
-            this._state.profilePage.posts.push(newPost);
-            this.dispatch(clearPostTextActiveCreation());
-            this._callSubscriber(this.getState());
-        } else if (action.type === "UPDATE-NEW-POST") {
-            this._state.profilePage.newPostText = action.newText;
-            this._callSubscriber(this.getState());
-        } else if (action.type === "CLEAR-POST-TEXT") {
-            this._state.profilePage.newPostText = "";
-            this._callSubscriber(this.getState());
-        } else if (action.type === "ADD-MESSAGE") {
-            let newMessage = {
-                id: 5,
-                author: 1,
-                text: this._state.dialogsPage.newMessageText
-            };
-            this._state.dialogsPage.messagesTest.push(newMessage);
-            this.dispatch(clearMessageTextActiveCreation());
-            debugger;
-            this._callSubscriber(this.getState());
-        } else if (action.type === "UPDATE-NEW-MESSAGE") {
-            this._state.dialogsPage.newMessageText = action.newMessage;
-            this._callSubscriber(this.getState());
-        } else if (action.type === "CLEAR-MESSAGE-TEXT") {
-            this._state.dialogsPage.newMessageText = "";
-            this._callSubscriber(this.getState());
-        }
+        this._state.profilePage = profileReducer(this._state.profilePage, action);
+        this._state.dialogsPage = dialogsReducer(this._state.dialogsPage, action);
+        this._callSubscriber(this.getState());
     }
 };
 
 
 window.store = store;
-
-export let clearPostTextActiveCreation = () => {
-    return {
-        type: "CLEAR-POST-TEXT"
-    }
-};
-export let addPostActiveCreation = () => {
-    return {
-        type: "ADD-POST"
-    }
-};
-export let updateNewPostActiveCreation = (text) => {
-    return {
-        type: "UPDATE-NEW-POST",
-        newText: text
-    }
-};
-
-export let clearMessageTextActiveCreation = () => {
-    return {
-        type: "CLEAR-MESSAGE-TEXT"
-    }
-};
-export let addMessageActiveCreation = () => {
-    return {
-        type: "ADD-MESSAGE"
-    }
-};
-export let updateNewMessageActiveCreation = (text) => {
-    return {
-        type: "UPDATE-NEW-MESSAGE",
-        newMessage: text
-    }
-};
-
 
 export default store;
