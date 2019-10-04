@@ -16,15 +16,15 @@ let initialState = {
         {id: 5, name: "Jack", likes: 7},
         {id: 6, name: "Alina", likes: 1}
     ],
-        messagesTest: [
-    {id: 1, text: "Hello", author: 1},
-    {id: 2, text: "How are you?", author: 1},
-    {id: 3, text: "Ohh! Very good", author: 2},
-    {id: 4, text: "I want buy a new car", author: 2},
-    {id: 5, text: "Its good news", author: 1},
-    {id: 5, text: "Its good news", author: 2},
-    {id: 6, text: "Thanks", author: 2}
-],
+    messagesTest: [
+        {id: 1, text: "Hello", author: 1},
+        {id: 2, text: "How are you?", author: 1},
+        {id: 3, text: "Ohh! Very good", author: 2},
+        {id: 4, text: "I want buy a new car", author: 2},
+        {id: 5, text: "Its good news", author: 1},
+        {id: 5, text: "Its good news", author: 2},
+        {id: 6, text: "Thanks", author: 2}
+    ],
     newMessageText: ""
 };
 

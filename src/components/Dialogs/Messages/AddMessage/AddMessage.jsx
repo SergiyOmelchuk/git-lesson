@@ -1,6 +1,5 @@
 import React from 'react';
 import s from './../../Dialogs.module.css';
-import {addMessageActiveCreation, updateNewMessageActiveCreation,} from "../../../redux/Dialogs-reducer";
 
 
 const AddMessage = (props) => {
@@ -8,16 +7,16 @@ const AddMessage = (props) => {
     let newMessageElement = React.createRef();
 
     let addMessage = () => {
-        props.dispatch(addMessageActiveCreation());
+        props.addMessage();
     };
     let onMessageChange = () => {
         let text = newMessageElement.current.value;
-        props.dispatch(updateNewMessageActiveCreation(text));
+        props.onMessageChange(text);
     };
 
     return (<div className={s.addMessage}>
         <div>
-            <textarea name="" ref={newMessageElement} onChange={onMessageChange} value={props.store.newMessageText}
+            <textarea name="" ref={newMessageElement} onChange={onMessageChange} value={props.newMessageText}
                       placeholder="Напишите сообщение..."/>
         </div>
         <div>
