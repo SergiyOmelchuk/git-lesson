@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 import DialogItem from "./DialogItem";
 import {connect} from "react-redux";
 
@@ -26,7 +26,7 @@ let mapStateToProps = (state) => {
     };
 };
 let mapDispatchToProps = (dispatch) => {
-
+return;
 };
 
 const DialogItemContainer = connect(mapStateToProps, mapDispatchToProps)(DialogItem);

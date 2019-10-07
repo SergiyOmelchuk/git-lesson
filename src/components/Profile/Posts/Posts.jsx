@@ -8,8 +8,8 @@ const Posts = (props) => {
     return (<div className={s.profilePosts}>
 
 
-        <AddPostContainer store={props.store} />
-        <MyPostsContainer store={props.store}/>
+        <AddPostContainer  />
+        <MyPostsContainer />
     </div>);
 };
 

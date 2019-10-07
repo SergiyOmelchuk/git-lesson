@@ -7,8 +7,8 @@ import MessageItemContainer from "./MessageItem/MessageItemContainer";
 const Messages = (props) => {
 
     return (<div className={s.messages}>
-        <MessageItemContainer store={props.store}/>
-        <AddMessageContainer store={props.store}/>
+        <MessageItemContainer />
+        <AddMessageContainer />
     </div>);
 }
 

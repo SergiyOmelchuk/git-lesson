@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 import MessageItem from "./MessageItem";
 import {connect} from "react-redux";
 
@@ -22,7 +22,7 @@ let mapStateToProps = (state) => {
     };
 };
 let mapDispatchToProps = (dispatch) => {
-
+return;
 };
 
 const MessageItemContainer = connect(mapStateToProps, mapDispatchToProps)(MessageItem);

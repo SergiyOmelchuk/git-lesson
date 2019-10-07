@@ -10,7 +10,7 @@ const Profile = (props) => {
 
     <ProfileBackground />
     <ProfileInfo />
-    <Posts store={props.store} dispatch={props.dispatch}/>
+    <Posts />
     <ProfilePorftfolio />
   </div>);
 }

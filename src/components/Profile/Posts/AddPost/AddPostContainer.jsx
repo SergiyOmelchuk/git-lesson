@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 import {addPostActiveCreation, updateNewPostActiveCreation} from "../../../redux/Profile-reducer";
 import AddPost from "./AddPost";
 import {connect} from "react-redux";
@@ -32,7 +32,7 @@ let mapStateToProps = (state) => {
 };
 let mapDispatchToProps = (dispatch) => {
     return {
-        AddPost: () => {
+        addPost: () => {
             dispatch(addPostActiveCreation());
         },
         onPostChange: (text) => {
