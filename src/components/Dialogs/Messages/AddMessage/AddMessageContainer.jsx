@@ -34,10 +34,11 @@ let mapStateToProps = (state) => {
 let mapDispatchToProps = (dispatch) => {
     return {
         addMessage: () => {
-            dispatch(addMessageActiveCreation())
+            dispatch(addMessageActiveCreation());
         },
         onMessageChange: (text) => {
-            dispatch(updateNewMessageActiveCreation(text))
+            debugger;
+            dispatch(updateNewMessageActiveCreation(text));
         }
     }
 };

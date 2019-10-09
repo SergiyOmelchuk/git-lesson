@@ -13,8 +13,7 @@ const MessageItem = (props) => {
     }
 
     let messageItem = props.messagesTest.map(el =>
-        <div className={author(el.author)}>{el.text} </div>);
-
+        <div className={author(el.author)} key={el.id}>{el.text} </div>);
     return (<div className={s.messages}>
         {messageItem}
     </div>);
