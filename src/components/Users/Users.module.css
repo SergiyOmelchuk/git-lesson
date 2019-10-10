@@ -1,0 +1,35 @@
+.users {
+    text-align: center;
+    background-color: grey;
+    width: 100%;
+}
+
+.usersBlock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.user {
+    padding: 50px;
+    border: 1px solid olivedrab;
+    margin: 20px;
+    background-color: floralwhite;
+}
+
+.avatarImage {
+    height: 100px;
+    width: 100px;
+    border: 1px solid grey;
+    border-radius: 50%;
+
+}
+.buttonFollow {
+    width: 100px;
+    background-color: green;
+}
+.buttonUnfollow {
+    width: 100px;
+    background-color: red;
+}

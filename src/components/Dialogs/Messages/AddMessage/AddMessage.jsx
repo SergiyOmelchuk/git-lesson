@@ -18,7 +18,7 @@ const AddMessage = (props) => {
         <div>
             <textarea name="" ref={newMessageElement} onChange={onMessageChange} value={props.newMessageText}
                       placeholder="Напишите сообщение..."/>
-        </div>
+    </div>
         <div>
             <button onClick={addMessage} name="Submit">Add Message</button>
         </div>
