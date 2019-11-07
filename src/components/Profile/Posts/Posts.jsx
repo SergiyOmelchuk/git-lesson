@@ -1,15 +1,15 @@
 import React from 'react';
 import s from "./../Profile.module.css";
-import AddPostContainer from "./AddPost/AddPostContainer";
-import MyPostsContainer from "./MyPosts/MyPostsContainer";
+import AddPost from "./AddPost/AddPost";
+import MyPosts from "./MyPosts/MyPosts";
 
 const Posts = (props) => {
 
     return (<div className={s.profilePosts}>
-
-
-        <AddPostContainer  />
-        <MyPostsContainer />
+        <AddPost addPost={props.addPost}
+                          updateNewPost={props.updateNewPost}
+                          newPostText={props.newPostText}/>
+        <MyPosts posts={props.posts}/>
     </div>);
 };
 

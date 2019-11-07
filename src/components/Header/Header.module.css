@@ -1,6 +1,7 @@
 .header {
   grid-area: h;
-  
+  display: flex;
+  justify-content: space-between;
 }
 .header img {
   width: 90px;

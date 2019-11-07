@@ -1,14 +1,14 @@
 import React from 'react';
 import s from './Dialogs.module.css';
-import Messages from './Messages/Messages';
 import DialogItemContainer from "./DialogItems/DialogItemContainer";
+import MessagesContainer from "./Messages/MessagesContainer";
+import {Redirect} from "react-router-dom";
 
 const Dialogs = (props) => {
-
     return (
         <div className={s.dialogsPage}>
-            <DialogItemContainer />
-            <Messages />
+            <DialogItemContainer/>
+            <MessagesContainer/>
         </div>);
 }
 

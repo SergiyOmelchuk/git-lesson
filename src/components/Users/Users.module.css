@@ -12,10 +12,15 @@
 }
 
 .user {
-    padding: 50px;
+    padding: 35px;
     border: 1px solid olivedrab;
     margin: 20px;
     background-color: floralwhite;
+    max-width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-items: center;
 }
 
 .avatarImage {
@@ -32,4 +37,20 @@
 .buttonUnfollow {
     width: 100px;
     background-color: red;
+}
+.selected {
+    font-weight: bold;
+    font-size: 120%;
+    padding: 0px 5px;
+}
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.paginationItems {
+    display: flex;
+}
+.item {
+    padding-left: 5px;
 }

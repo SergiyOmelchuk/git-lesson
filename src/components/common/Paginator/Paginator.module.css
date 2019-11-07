@@ -1,0 +1,17 @@
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.paginationItems {
+    display: flex;
+}
+.item {
+    padding-left: 5px;
+}
+.selected {
+    font-weight: bold;
+    font-size: 120%;
+    padding: 0px 5px;
+}

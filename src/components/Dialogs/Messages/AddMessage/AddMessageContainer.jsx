@@ -1,5 +1,5 @@
 import React from 'react';
-import {addMessageActiveCreation, updateNewMessageActiveCreation,} from "../../../redux/Dialogs-reducer";
+import {addMessageActiveCreation} from "../../../redux/Dialogs-reducer";
 import AddMessage from "./AddMessage";
 import {connect} from "react-redux";
 
@@ -33,13 +33,12 @@ let mapStateToProps = (state) => {
 };
 let mapDispatchToProps = (dispatch) => {
     return {
-        addMessage: () => {
-            dispatch(addMessageActiveCreation());
-        },
-        onMessageChange: (text) => {
-            debugger;
-            dispatch(updateNewMessageActiveCreation(text));
+        addMessage: (newMessageText) => {
+            dispatch(addMessageActiveCreation(newMessageText));
         }
+        // onMessageChange: (text) => {
+        //     dispatch(updateNewMessageActiveCreation(text));
+        // }
     }
 };
 

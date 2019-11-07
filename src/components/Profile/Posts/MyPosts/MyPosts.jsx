@@ -2,7 +2,7 @@ import React from 'react';
 import s from "./../../Profile.module.css";
 
 const MyPosts = (props) => {
-
+console.log("MyPosts");
     let allPosts = props.posts.map(el =>
         (
             <div className={s.PostsPost}>
@@ -23,5 +23,6 @@ const MyPosts = (props) => {
             {allPosts}
         </div>);
 }
+
 
 export default MyPosts;
