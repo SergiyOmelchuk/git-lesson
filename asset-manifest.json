@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/git-lesson/static/css/main.6ac72de3.chunk.css",
-    "main.js": "/git-lesson/static/js/main.b5889866.chunk.js",
-    "main.js.map": "/git-lesson/static/js/main.b5889866.chunk.js.map",
-    "runtime-main.js": "/git-lesson/static/js/runtime-main.c826ecea.js",
-    "runtime-main.js.map": "/git-lesson/static/js/runtime-main.c826ecea.js.map",
-    "static/js/2.9357f9cd.chunk.js": "/git-lesson/static/js/2.9357f9cd.chunk.js",
-    "static/js/2.9357f9cd.chunk.js.map": "/git-lesson/static/js/2.9357f9cd.chunk.js.map",
+    "main.js": "/git-lesson/static/js/main.7cb0e1fc.chunk.js",
+    "main.js.map": "/git-lesson/static/js/main.7cb0e1fc.chunk.js.map",
+    "runtime-main.js": "/git-lesson/static/js/runtime-main.4c7d6b94.js",
+    "runtime-main.js.map": "/git-lesson/static/js/runtime-main.4c7d6b94.js.map",
+    "static/js/2.f4e692fd.chunk.js": "/git-lesson/static/js/2.f4e692fd.chunk.js",
+    "static/js/2.f4e692fd.chunk.js.map": "/git-lesson/static/js/2.f4e692fd.chunk.js.map",
     "static/css/3.40f475da.chunk.css": "/git-lesson/static/css/3.40f475da.chunk.css",
-    "static/js/3.0adad266.chunk.js": "/git-lesson/static/js/3.0adad266.chunk.js",
-    "static/js/3.0adad266.chunk.js.map": "/git-lesson/static/js/3.0adad266.chunk.js.map",
+    "static/js/3.4b4df60d.chunk.js": "/git-lesson/static/js/3.4b4df60d.chunk.js",
+    "static/js/3.4b4df60d.chunk.js.map": "/git-lesson/static/js/3.4b4df60d.chunk.js.map",
     "static/css/4.82704a31.chunk.css": "/git-lesson/static/css/4.82704a31.chunk.css",
     "static/js/4.6631ca4e.chunk.js": "/git-lesson/static/js/4.6631ca4e.chunk.js",
     "static/js/4.6631ca4e.chunk.js.map": "/git-lesson/static/js/4.6631ca4e.chunk.js.map",
     "index.html": "/git-lesson/index.html",
-    "precache-manifest.088a380821f030890419e25593c7a246.js": "/git-lesson/precache-manifest.088a380821f030890419e25593c7a246.js",
+    "precache-manifest.b1b5b292755a64fcde1587a3c99d0140.js": "/git-lesson/precache-manifest.b1b5b292755a64fcde1587a3c99d0140.js",
     "service-worker.js": "/git-lesson/service-worker.js",
     "static/css/3.40f475da.chunk.css.map": "/git-lesson/static/css/3.40f475da.chunk.css.map",
     "static/css/4.82704a31.chunk.css.map": "/git-lesson/static/css/4.82704a31.chunk.css.map",
@@ -23,9 +23,9 @@
     "static/media/preloader.gif": "/git-lesson/static/media/preloader.01ef99b8.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.c826ecea.js",
-    "static/js/2.9357f9cd.chunk.js",
+    "static/js/runtime-main.4c7d6b94.js",
+    "static/js/2.f4e692fd.chunk.js",
     "static/css/main.6ac72de3.chunk.css",
-    "static/js/main.b5889866.chunk.js"
+    "static/js/main.7cb0e1fc.chunk.js"
   ]
 }
