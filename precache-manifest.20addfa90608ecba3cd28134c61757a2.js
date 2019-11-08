@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b0d014c44988b77559480203598c57a1",
+    "revision": "5333e8d7944c3debe7e03bc11e404ea9",
     "url": "/git-lesson/index.html"
   },
   {
@@ -12,7 +12,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/git-lesson/static/css/4.82704a31.chunk.css"
   },
   {
-    "revision": "9901a2e6d419942b1afa",
+    "revision": "da3f33f57d3f8a789a90",
     "url": "/git-lesson/static/css/main.6ac72de3.chunk.css"
   },
   {
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/git-lesson/static/js/4.6631ca4e.chunk.js"
   },
   {
-    "revision": "9901a2e6d419942b1afa",
-    "url": "/git-lesson/static/js/main.c92100ab.chunk.js"
+    "revision": "da3f33f57d3f8a789a90",
+    "url": "/git-lesson/static/js/main.aac47514.chunk.js"
   },
   {
     "revision": "ba86050488e37869444c",
