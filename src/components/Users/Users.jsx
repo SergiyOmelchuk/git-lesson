@@ -3,12 +3,12 @@ import s from "./Users.module.css";
 import Paginator from "../common/Paginator/Paginator";
 import User from "./User";
 
-let Users = ({currentPage, pageSize, totalUsersCount, onPageChanged, users, ...props}) => {
+let Users = ({currentPage, pageSize, totalItemsCount, onPageChanged, users, ...props}) => {
 
     return (
         <div className={s.users}>
-            <Paginator currentPage={currentPage} pageSize={pageSize}
-                       totalUsersCount={totalUsersCount} onPageChanged={onPageChanged}/>
+            <Paginator currentPage={currentPage} pageSize={pageSize} portionSize={25}
+                       totalItemsCount={totalItemsCount} onPageChanged={onPageChanged}/>
             <div className={s.usersBlock}>
                 {
                     users.map((user) => <User key={user.id}

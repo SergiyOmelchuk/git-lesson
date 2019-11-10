@@ -22,7 +22,7 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .profileLogo {
@@ -97,4 +97,15 @@
 .addPostTextarea {
     width: 100%;
     background-color: goldenrod;
+}
+.socialIcons {
+    display: flex;
+    align-items: center;
+    padding-right: 3px;
+}
+.socialIcons img {
+    max-height: 30px;
+}
+.contact {
+    padding-left: 10px;
 }

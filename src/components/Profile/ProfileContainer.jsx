@@ -5,18 +5,23 @@ import ProfileBackground from './ProfileBackground/ProfileBackground';
 import ProfileInfo from './ProfileInfo/ProfileInfo';
 import ProfilePorftfolio from './ProfilePorftfolio/ProfilePorftfolio';
 import {connect} from "react-redux";
-import {addPost, getStatus, getUserProfile, updateNewPost, updateStatus} from "../redux/Profile-reducer";
+import {
+    addPost,
+    getStatus,
+    getUserProfile,
+    setPhoto,
+    updateProfileData,
+    updateNewPost,
+    updateStatus
+} from "../redux/Profile-reducer";
 import {withRouter} from "react-router-dom";
 import {compose} from "redux";
 import {withAuthRedirect} from "../../hoc/withAuthRedirect";
 
 
 class ProfileContainer extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
-    componentDidMount() {
+    refreshProfile() {
         let userId = this.props.match.params.userId;
         if (!userId) {
             if (!this.props.userIdOwner) {
@@ -27,6 +32,10 @@ class ProfileContainer extends React.Component {
         }
         this.props.getUserProfile(userId);
         this.props.getStatus(userId);
+    }
+
+    componentDidMount() {
+        this.refreshProfile();
         // let userId = this.props.match.params.userId;
         // if (!userId) userId = 2;
         // usersAPI.setUserProfile(userId).then(response => {
@@ -34,11 +43,19 @@ class ProfileContainer extends React.Component {
         // });
     }
 
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if (this.props.match.params.userId != prevProps.match.params.userId) {
+            this.refreshProfile();
+        }
+    }
+
     render() {
         return (<div className={s.profile}>
             <ProfileBackground/>
             <ProfileInfo profile={this.props.profile} status={this.props.status}
-                         updateStatus={this.props.updateStatus} />
+                         updateProfileData={this.props.updateProfileData}
+                         updateStatus={this.props.updateStatus} setPhoto={this.props.setPhoto}
+            />
             <Posts addPost={this.props.addPost}
                    updateNewPost={this.props.updateNewPost}
                    newPostText={this.props.newPostText}
@@ -57,7 +74,7 @@ let mapStateToProps = (state) => {
         profile: state.profilePage.profile,
         auth: state.auth.isAuth,
         userIdOwner: state.auth.userId,
-        status: state.profilePage.status
+        status: state.profilePage.status,
     };
 };
 
@@ -65,7 +82,15 @@ let mapStateToProps = (state) => {
 //
 // export default connect(mapStateToProps, {addPost, updateNewPost, getUserProfile})(WithUrlDataContainerComponent);
 export default compose(
-    connect(mapStateToProps, {addPost, updateNewPost, getUserProfile, getStatus, updateStatus}),
+    connect(mapStateToProps, {
+        addPost,
+        updateNewPost,
+        getUserProfile,
+        getStatus,
+        updateStatus,
+        setPhoto,
+        updateProfileData
+    }),
     withRouter,
     withAuthRedirect
 )(ProfileContainer)

@@ -43,6 +43,7 @@ let User = ({user, follow, isFollowing, unFollow, ...props}) => {
                 }
             </div>
             <div> {user.name}</div>
+            <div> {"user.lookingForAJob" ? "Yes" : " No"}</div>
             <div>{user.status}</div>
             <div>{"user.location.country"}</div>
             <div>{"user.location.city"}</div>

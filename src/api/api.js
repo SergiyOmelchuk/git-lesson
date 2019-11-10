@@ -4,7 +4,7 @@ const instanse = axios.create({
     baseURL: "https://social-network.samuraijs.com/api/1.0/",
     withCredentials: true, // благодаря этому всегда отправляются куки вместе с запросом
     headers: {
-        "API-KEY": "a5f35fb0-b44a-4600-9e21-30548da7e1d0"
+        "API-KEY": "f44e1c37-e618-4224-90c9-47813b2460fc"
     }
 });
 
@@ -40,6 +40,19 @@ export const profileAPI = {
     },
     updateStatus(statusText) {
         return instanse.put(`profile/status/`, {status: statusText});
+    },
+    setProfileData(profileData) {
+        debugger
+        return instanse.put(`profile/`, profileData);
+    },
+    uploadNewProfilePhoto(photo) {
+        const formData = new FormData();
+        formData.append("image", photo);
+        return instanse.put(`profile/photo/`, formData, {
+            headers: {
+                'Content-type': 'multipart/form-data'
+            }
+        });
     }
 }
 export const authAPI = {

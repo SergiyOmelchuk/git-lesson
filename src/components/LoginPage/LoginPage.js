@@ -1,5 +1,5 @@
 import React from "react";
-import {Field, reduxForm} from "redux-form";
+import {reduxForm} from "redux-form";
 import s from './Login.module.css';
 import {createField, Input} from "../common/FormsControls/FormsControls";
 import {required} from "../../utils/validators";
@@ -8,23 +8,12 @@ import {login} from "../redux/Auth-reducer";
 import {Redirect} from "react-router-dom";
 
 // const LoginForm = (props) => { далее деструктуризация:
-const LoginForm = ( { handleSubmit } ) => {
+const LoginForm = ({handleSubmit}) => {
     return (
         <form onSubmit={handleSubmit}>
-            {createField("Email", "email",[required], Input )}
-            {createField("Password", "password",[required], Input, null,{type: "password"} )}
-            {createField(null, "rememberMe",[], Input, "remember me", {type: "checkbox"} )}
-
-            {/*<div>*/}
-            {/*    <Field placeholder={"Email"} name={"email"} validate={[required]} component={Input}/>*/}
-            {/*</div>*/}
-            {/*<div>*/}
-            {/*    <Field placeholder={"Password"} name={"password"} validate={[required]} component={Input}*/}
-            {/*           type="password"/>*/}
-            {/*</div>*/}
-            {/*<div>*/}
-            {/*    <Field type={"checkbox"} name={"rememberMe"} component={Input}/> remember me*/}
-            {/*</div>*/}
+            {createField("Email", "email", [required], Input)}
+            {createField("Password", "password", [required], Input, null, {type: "password"})}
+            {createField(null, "rememberMe", [], Input, "remember me", {type: "checkbox"})}
             <div>
                 <button>Login</button>
             </div>
@@ -35,7 +24,7 @@ const LoginForm = ( { handleSubmit } ) => {
 
 const LoginReduxForm = reduxForm({form: "login"})(LoginForm);
 
-const LoginPage = ( { login, isAuth } ) => {
+const LoginPage = ({login, isAuth}) => {
     let onSubmit = (data) => {
         login(data.email, data.password, data.rememberMe)
     }

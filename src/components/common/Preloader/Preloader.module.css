@@ -2,3 +2,6 @@
     display: block;
     margin: auto auto;
 }
+.textPreloader {
+    min-height: 100px;
+}

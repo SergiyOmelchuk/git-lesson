@@ -8,10 +8,10 @@
     display: flex;
 }
 .item {
-    padding-left: 5px;
+    padding: 5px;
+    border: 1px solid greenyellow;
+    margin: 0 1px;
 }
 .selected {
     font-weight: bold;
-    font-size: 120%;
-    padding: 0px 5px;
 }

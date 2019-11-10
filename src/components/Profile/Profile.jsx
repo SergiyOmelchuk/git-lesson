@@ -9,7 +9,7 @@ const Profile = (props) => {
   return (<div className={s.profile}>
 
     <ProfileBackground />
-    <ProfileInfo />
+    <ProfileInfo {...props}/>
     <Posts />
     <ProfilePorftfolio />
   </div>);
